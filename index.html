@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>MIC Alumni Startups</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        alt=""
+        src="https://1ba6ce27946d04daf60a668665de63d2.cdn.bubble.io/f1635245520765x275186305451826200/ArrowUp.svg"
+        style="margin: 0px; width: 100%; height: 100%; border-radius: 0px"
+      />
+    </button>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo"
+          ><img src="assets/img/logo.png" alt=""
+        /></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#startups" class="nav__link">Startups</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- close button  -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <img src="assets/img/MIC_LOGO.png" alt="nav image" class="nav__img" />
+        </div>
+
+        <!-- toggle button  -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__shape-small"></div>
+        <div class="home__shape-big-1"></div>
+        <div class="home__shape-big-2"></div>
+        <img src="assets/img/shape-bg.png" alt="" class="home__shape-bg" />
+
+        <div class="home__container container">
+          <div class="home__info">
+            <h1 class="home__title">
+              <span>Welcome</span> <br />
+              To The MIC <br />
+              Alumni Startups
+            </h1>
+            <p class="home__description">
+              Explore on the best Startups from our Alumnis. <br />Connect
+              innovators, investors, and creators on this Platform.
+            </p>
+            <a href="#startups" class="home__button">EXPLORE</a>
+          </div>
+
+          <div class="home__group">
+            <div class="home__images">
+              <div class="home__img-eth">
+                <!-- <img src="assets/img/ethereum-img.png" alt="home image" /> -->
+                <img src="assets/img/MIC_LOGO.png" alt="home image" />
+              </div>
+              <div class="home__img-orbe">
+                <img src="assets/img/orbe-img.png" alt="home image" />
+              </div>
+            </div>
+
+            <div class="home__data">
+              <div>
+                <h2 class="home__data-number">150+</h2>
+                <span class="home__data-subtitle">Startups</span>
+              </div>
+              <div>
+                <h2 class="home__data-number">90+</h2>
+                <span class="home__data-subtitle">Registered</span>
+              </div>
+              <div>
+                <h2 class="home__data-number">10+</h2>
+                <span class="home__data-subtitle">Unicorns</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__footer">
+            <div>
+              <span class="home__footer-title">Today's Date</span>
+              <h3 class="home__footer-number" id="date"></h3>
+              <span class="home__footer-subtitle">DD/MM/YYYY</span>
+            </div>
+
+            <div>
+              <span class="home__footer-title">Current Time</span>
+              <div class="home__footer-time">
+                <div class="home__footer-counter">
+                  <h3 class="home__footer-number" id="hour"></h3>
+                  <span class="home__footer-subtitle">hours</span>
+                </div>
+                <div class="home__footer-counter">
+                  <h3 class="home__footer-number" id="minute"></h3>
+                  <span class="home__footer-subtitle">minutes</span>
+                </div>
+                <div class="home__footer-counter">
+                  <h3 class="home__footer-number" id="second"></h3>
+                  <span class="home__footer-subtitle">seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__container container">
+          <div class="about__info">
+            <h2 class="about__title">
+              <span>About</span>
+              <div class="border"></div>
+            </h2>
+            <p class="about__description">
+              At Startup Gallery, we firmly believe in the transformative
+              potential of innovation. Our dedicated mission is to empower
+              startups on their journey towards growth and success. We offer a
+              comprehensive array of tools, resources, and expert guidance to
+              facilitate their thriving. Join us as we work together towards
+              building a brighter future for everyone.
+            </p>
+          </div>
+          <div class="about__mission">
+            <h2 class="about__title2">
+              Our Mission
+              <div class="border2"></div>
+            </h2>
+            <div class="about__mission-one">
+              <div class="about__mission-head">
+                <img
+                  src="assets/img/about1.avif"
+                  alt="missions"
+                  class="about__mission-img"
+                />
+                <h3 class="about__mission-name">Innovative Solutions</h3>
+                <p class="about__mission-role">
+                  Discover groundbreaking ideas and solutions that can change
+                  the world.
+                </p>
+              </div>
+              <div class="about__mission-head">
+                <img
+                  src="assets/img/about2.jpeg"
+                  alt="missions"
+                  class="about__mission-img"
+                />
+                <h3 class="about__mission-name">Creative Thinking</h3>
+                <p class="about__mission-role">
+                  Explore the power of creativity to unlock new possibilities
+                  and drive innovation.
+                </p>
+              </div>
+              <div class="about__mission-head">
+                <img
+                  src="assets/img/about3.jpeg"
+                  alt="missions"
+                  class="about__mission-img"
+                />
+                <h3 class="about__mission-name">Collaboration</h3>
+                <p class="about__mission-role">
+                  Join our community and connect with like-minded people who
+                  share your passion for change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="startups" id="startups">
+        <!-- <img src="assets/img/shape-bg.png" alt="" class="startup__shape-bg" /> -->
+        <div class="startup__background">
+          <img src="assets/img/shape-bg.png" alt="" class="startup__shape-bg" />
+        </div>
+        <div class="startup__main container">
+          <div>
+            <h1 class="startup__title">
+              <span>Startups</span>
+            </h1>
+            <p class="startup__description">
+              Here are the Startups from our Alumni.
+            </p>
+          </div>
+          <div class="startup__list">
+            <div class="card">
+              <div class="startup__pic">
+                <img
+                  src="assets/img/Alumni DP/pp1.jpeg"
+                  alt=""
+                  class="startup__dp"
+                />
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="linkedin_icon"
+                >
+                  <i class="fa fa-linkedin fa-2x fa_custom"></i>
+                </a>
+              </div>
+              <div class="startup__contents">
+                <div class="startup__full-name s-title">
+                  <span>Full Name : </span> Rohit Kumar
+                </div>
+                <br />
+                <div class="startup__participation s-title">
+                  <span>Participated in : </span> SIH2020
+                </div>
+                <br />
+                <div class="startup__about s-title">
+                  <span>About : </span> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Qui, molestiae distinctio sit, debitis
+                  fugiat voluptas ex sequi alias voluptatibus dignissimos odit
+                  recusandae, dolore tempore dicta harum vel. Corporis voluptas
+                  harum cum a earum minus ducimus neque debitis, dolor molestias
+                  rem quo autem sapiente laborum possimus hic. Tempora dolores
+                  culpa consequuntur?
+                </div>
+                <br />
+                <div class="startup__name s-title">
+                  <span>Startup : </span> XYZ Pvt Ltd
+                </div>
+                <br />
+                <div class="startup__profile s-title">
+                  <span>Startup/Organisation Profile : </span> Lorem ipsum
+                  dolor, sit amet consectetur adipisicing elit. Aperiam delectus
+                  exercitationem facere a magnam, eligendi nisi autem modi
+                  commodi quibusdam, beatae sequi consequatur, iusto eaque
+                  architecto ipsam et ipsum sunt quo odio! Vitae voluptate, ea
+                  labore facere saepe eveniet ex enim quos, reiciendis aliquid
+                  nam fuga, incidunt ut molestiae amet!
+                </div>
+                <br />
+                <div class="startup__link-button">
+                  <span
+                    ><a href="https://www.google.com/" target="_blank"
+                      >STARTUP LINK</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="startup__list">
+            <div class="card">
+              <div class="startup__pic">
+                <img
+                  src="assets/img/Alumni DP/pp1.jpeg"
+                  alt=""
+                  class="startup__dp"
+                />
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="linkedin_icon"
+                >
+                  <i class="fa fa-linkedin fa-2x fa_custom"></i>
+                </a>
+              </div>
+              <div class="startup__contents">
+                <div class="startup__full-name s-title">
+                  <span>Full Name : </span> Rohit Kumar
+                </div>
+                <br />
+                <div class="startup__participation s-title">
+                  <span>Participated in : </span> SIH2020
+                </div>
+                <br />
+                <div class="startup__about s-title">
+                  <span>About : </span> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Qui, molestiae distinctio sit, debitis
+                  fugiat voluptas ex sequi alias voluptatibus dignissimos odit
+                  recusandae, dolore tempore dicta harum vel. Corporis voluptas
+                  harum cum a earum minus ducimus neque debitis, dolor molestias
+                  rem quo autem sapiente laborum possimus hic. Tempora dolores
+                  culpa consequuntur?
+                </div>
+                <br />
+                <div class="startup__name s-title">
+                  <span>Startup : </span> XYZ Pvt Ltd
+                </div>
+                <br />
+                <div class="startup__profile s-title">
+                  <span>Startup/Organisation Profile : </span> Lorem ipsum
+                  dolor, sit amet consectetur adipisicing elit. Aperiam delectus
+                  exercitationem facere a magnam, eligendi nisi autem modi
+                  commodi quibusdam, beatae sequi consequatur, iusto eaque
+                  architecto ipsam et ipsum sunt quo odio! Vitae voluptate, ea
+                  labore facere saepe eveniet ex enim quos, reiciendis aliquid
+                  nam fuga, incidunt ut molestiae amet!
+                </div>
+                <br />
+                <div class="startup__link-button">
+                  <span
+                    ><a href="https://www.google.com/" target="_blank"
+                      >STARTUP LINK</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="startup__list">
+            <div class="card">
+              <div class="startup__pic">
+                <img
+                  src="assets/img/Alumni DP/pp1.jpeg"
+                  alt=""
+                  class="startup__dp"
+                />
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="linkedin_icon"
+                >
+                  <i class="fa fa-linkedin fa-2x fa_custom"></i>
+                </a>
+              </div>
+              <div class="startup__contents">
+                <div class="startup__full-name s-title">
+                  <span>Full Name : </span> Rohit Kumar
+                </div>
+                <br />
+                <div class="startup__participation s-title">
+                  <span>Participated in : </span> SIH2020
+                </div>
+                <br />
+                <div class="startup__about s-title">
+                  <span>About : </span> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Qui, molestiae distinctio sit, debitis
+                  fugiat voluptas ex sequi alias voluptatibus dignissimos odit
+                  recusandae, dolore tempore dicta harum vel. Corporis voluptas
+                  harum cum a earum minus ducimus neque debitis, dolor molestias
+                  rem quo autem sapiente laborum possimus hic. Tempora dolores
+                  culpa consequuntur?
+                </div>
+                <br />
+                <div class="startup__name s-title">
+                  <span>Startup : </span> XYZ Pvt Ltd
+                </div>
+                <br />
+                <div class="startup__profile s-title">
+                  <span>Startup/Organisation Profile : </span> Lorem ipsum
+                  dolor, sit amet consectetur adipisicing elit. Aperiam delectus
+                  exercitationem facere a magnam, eligendi nisi autem modi
+                  commodi quibusdam, beatae sequi consequatur, iusto eaque
+                  architecto ipsam et ipsum sunt quo odio! Vitae voluptate, ea
+                  labore facere saepe eveniet ex enim quos, reiciendis aliquid
+                  nam fuga, incidunt ut molestiae amet!
+                </div>
+                <br />
+                <div class="startup__link-button">
+                  <span
+                    ><a href="https://www.google.com/" target="_blank"
+                      >STARTUP LINK</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer" id="footer">
+        <!-- <img src="assets/img/shape-bg.png" alt="" class="startup__shape-bg" /> -->
+        <div class="startup__background">
+          <img src="assets/img/shape-bg.png" alt="" class="startup__shape-bg" />
+        </div>
+        
+      </section>
+    </main>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
